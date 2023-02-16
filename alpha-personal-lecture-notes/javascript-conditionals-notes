@@ -1,0 +1,73 @@
+//Javascript Conditionals 2/15/23
+
+//Conditionals: decision trees, if/else statements, conditional statements
+    //use conditions to produce an output
+    //Conditions: determine if a value is true or false (Boolean values)
+    //The first true condition will produce an output for the conditional. Only
+    //one output per conditional.
+
+//Conditions
+    //Boolean values: true or false
+    //Conditions are setup by three operators
+        //Operators
+        //Equality: == loose or === strict
+            //Examples
+            var num = 23
+            console.log(num === 23) //true
+            console.log(num === 20) //false
+            console.log(num == "23") //true: type coercion
+            console.log(num === "23") //false because different data types 
+        //Relational: <, <=, >, >=
+            //Examples
+            var myName = "CJ"
+            console.log(num > 20) //true
+            console.log(num > myName) //false: different data types
+            console.log(num > myName.length) //true: comparing number and number of characters in the string
+        //Logical: &&, ||, ! (Bang operator, Not, Negation)
+            //Examples
+            //Logical &&
+            console.log(num > 20 && num > myName.length) //true: both conditions are true
+            console.log(num < 20 && num > myName.length) //false: because first condition is false. 
+            //&& only produces true when all conditions are true
+
+            //Logical ||
+            console.log(num < 20 || num > myName.length) //true: || only needs one condition to be true
+
+            //Negation
+            console.log(!(num < 20 || num > myName.length)) //false: negate the outcome of the whole condition
+
+//Conditionals
+    //if: takes a condition () and performs logic {}
+        //only one if per conditional
+    if (num > 18){
+        console.log("This number is great than 18!")
+    }
+    //else: only performs logic if the other conditions are false, catchall
+        //only one else per conditional
+    var favColor = "blue"
+    //var nextColor = "pink"
+    if(favColor === "purple"){
+        console.log("Have you considered blue?")
+    } else{
+        console.log("Blue is a better color!")
+    }
+    //else if: allows to include additional conditions and logic
+    if(favColor === "purple"){
+        console.log("Have you considered blue?")
+    } else if(favColor === "pink"){ 
+        console.log("That is the second best color to blue!")
+    } else if (favColor === "blue"){
+        console.log("You have great taste!")
+    } else{
+        console.log("Try blue")
+    }
+    //output changes based on what favColor is assigned to for this example
+
+
+
+
+
+
+
+
+
